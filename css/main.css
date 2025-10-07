@@ -1,0 +1,251 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__top {
+    background-color: rgba(237, 243, 245, 1);
+    padding: 21px 0px;
+}
+
+  
+@media (max-width: 2000px) {
+    .navlist > li {
+    margin-left: 50px;
+}
+}
+
+@media (max-width: 1300px) {
+    .navlist > li {
+    margin-left: 40px;
+}
+}
+
+@media (max-width: 1194px) {
+    .navlist > li {
+    margin-left: 25px;
+}
+}
+
+@media (max-width: 1100px) {
+    .navlist > li {
+    margin-left: 20px;
+}
+}
+
+@media (min-width: 900px) and (max-width:1050px){
+    .navlist  {
+   font-size: 12px;
+    
+}
+
+
+}
+
+.navbar, .header__top {
+    display: none;
+}
+
+
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin-top: 5px;
+  z-index: 100;
+}
+
+.lang-menu a {
+  display: block;
+  padding: 4px 6px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lang-menu a:hover {
+  opacity: 0.5;
+}
+
+
+/* JavaScript orqali ochilganda */
+.lang-menu.show {
+  display: block;
+}
+
+/* ------------------------------------------------------------------- */
+
+ /* Burger Button */
+    .burger-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 110;
+      position: relative;
+      margin-left: auto;
+    }
+
+      .burger-line {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: rgba(2, 0, 0, 0.945);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .burger-line:nth-child(2) {
+      margin: 6px 0;
+    }
+
+    .burger-btn.active .burger-line:nth-child(1) {
+      transform: rotate(41deg) translateY(12px);
+    }
+
+    .burger-btn.active .burger-line:nth-child(2) {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    .burger-btn.active .burger-line:nth-child(3) {
+      transform: rotate(-41deg) translateY(-11px);
+    }
+
+      /* Mobile Menu Overlay */
+    .menu-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(12px);
+      z-index: 90;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .menu-overlay.show {
+      display: block;
+      opacity: 1;
+    }
+
+
+    /* Mobile Menu Panel */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 280px;
+      /* background: rgba(17, 24, 39, 0.95); */
+      background: rgba(0, 55, 145, 1);
+      backdrop-filter: blur(24px);
+      z-index: 95;
+      box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-menu.show {
+      transform: translateX(0);
+    }
+
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding-top: 25px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+
+    .mobile-nav-item {
+      margin-bottom: 0px;
+    }
+
+    .mobile-nav-link {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 6px 8px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .mobile-nav-list :nth-child(9) > .mobile-nav-link,
+    .mobile-nav-list :nth-child(10) > .mobile-nav-link {
+        display: flex;
+    }
+
+    .mobile-nav-link:hover {
+      background-color: rgb(243, 227, 227);
+      color: black;
+    }
+
+    .mobile-nav-link.active {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+
+      /* Desktop Navigation Show */
+    @media (min-width: 1024px) {
+      .navbar,
+      .header__top,
+      .burger-btn       {
+        display: block;
+      }
+
+      .burger-btn,
+      .menu-overlay,
+      .mobile-menu {
+        display: none !important;
+      }
+
+      .header-logo img {
+        width: 138px;
+      }
+
+      .til2 {
+        display: none;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
