@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>AAT</title>
   </head>
   <body>
@@ -17,19 +25,24 @@
         <div class="container">
           <div class="header__top__inner flex justify-between">
             <div class="flex items-center">
-              <a href="tel:+998935054505" class="flex items-center mr-[21px] text-[14px]"
+              <a
+                href="tel:+998935054505"
+                class="flex items-center mr-[21px] text-[14px]"
                 ><img src="./img/phone.png" class="w-5 h-5 mr-[5px]" alt="" />
                 +99 893 505 45 05</a
               >
-              <a href="mailto:aat@info.com" class="flex items-center text-[14px]"
+              <a
+                href="mailto:aat@info.com"
+                class="flex items-center text-[14px]"
                 ><img src="./img/mail.png" class="w-5 h-max mr-[5px]" alt="" />
                 aat@info.com</a
               >
             </div>
             <div class="lang-dropdown">
               <button class="lang-btn" id="langBtn">
-                <div class="flex items-center text-[14px] lanBtnVal" >
-                  <div id="lanBtnVal">RU</div> <img src="./img/arrowDown.png" class="ml-[6px]" alt="" />
+                <div class="flex items-center text-[14px] lanBtnVal">
+                  <div id="lanBtnVal">RU</div>
+                  <img src="./img/arrowDown.png" class="ml-[6px]" alt="" />
                 </div>
               </button>
               <div class="lang-menu" id="langMenu">
@@ -56,23 +69,22 @@
 
             <nav class="ml-auto navbar">
               <ul class="flex uppercase font-semibold navlist lg:text-[14px]">
-                <li><a href="">О компании</a></li>
-                <li><a href="">основатель холдинга</a></li>
-                <li><a href="">компании</a></li>
-                <li><a href="">R&d центр</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Партнерство</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="/about.html">О компании</a></li>
+                <li><a href="/holding.html">основатель холдинга</a></li>
+                <li><a href="/company.html">компании</a></li>
+                <li><a href="/centre.html">R&d центр</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="/partner.html">Партнерство</a></li>
+                <li><a href="/contact.html">Контакты</a></li>
               </ul>
             </nav>
 
             <div class="flex ml-auto til2">
               <!--    -------Til---------     -->
-              <div class="ml-auto  mr-5">
+              <div class="ml-auto mr-5">
                 <div class="lang-dropdown">
-                  <button class="lang-btn " id="langBtn2">
+                  <button class="lang-btn" id="langBtn2">
                     <div class="flex items-center lanBtnVal2">
-
                       <div id="lanBtnVal2">RU</div>
                       <img src="./img/arrowDown.png" class="ml-[6px]" alt="" />
                     </div>
@@ -108,25 +120,27 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav-list uppercase">
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">О компании</a>
+              <a href="/about.html" class="mobile-nav-link">О компании</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">основатель холдинга</a>
+              <a href="/holding.html" class="mobile-nav-link"
+                >основатель холдинга</a
+              >
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">компании</a>
+              <a href="/company.html" class="mobile-nav-link">компании</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">R&d центр</a>
+              <a href="/centre.html" class="mobile-nav-link">R&d центр</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">Новости</a>
+              <a href="/news.html" class="mobile-nav-link">Новости</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">Партнерство</a>
+              <a href="/partner.html" class="mobile-nav-link">Партнерство</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="" class="mobile-nav-link">Контакты</a>
+              <a href="/contact.html" class="mobile-nav-link">Контакты</a>
             </li>
 
             <li class="mobile-nav-item"><div class="block h-15"></div></li>
@@ -134,7 +148,7 @@
               <a
                 href="tel:+998935054505"
                 class="flex items-center mr-[21px] mobile-nav-link"
-                ><img src="./img/phone.png" class="w-5 h-5 mr-[5px]" alt="" />
+                ><img src="./img/phone-w.svg" class="w-5 h-5 mr-[5px]" alt="" />
                 +99 893 505 45 05</a
               >
             </li>
@@ -142,7 +156,11 @@
               <a
                 href="mailto:aat@info.com"
                 class="flex items-center mobile-nav-link"
-                ><img src="./img/mail.png" class="w-5 h-max mr-[5px]" alt="" />
+                ><img
+                  src="./img/mail-w.svg"
+                  class="w-5 h-max mr-[5px]"
+                  alt=""
+                />
                 aat@info.com</a
               >
             </li>
@@ -151,6 +169,235 @@
       </div>
     </header>
 
+    <main>
+      <!-- {-----------  hero  ---------} -->
+      <section class="hero relative">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide bg-[url('/img/heroBg.png')]">
+              <div class="container">
+                <div class="slide-content">
+                  <h2
+                    class="lg:text-[60px] sm:text-[40px] text-[25px] leading-none font-[700] mb-4"
+                  >
+                    Холдинг AAT <br />
+                    Group
+                  </h2>
+                  <p
+                    class="lg:text-[22px] sm:text-[18px] text-[16px] mb-[33px] font-[500]"
+                  >
+                    Известная группа компаний, которая продолжает свой активный
+                    и успешный путь развития
+                  </p>
+                  <a
+                    href="#"
+                    class="frame flex items-center gap-2 max-w-[170px] bg-white font-[600] text-[14px] text-[#FE0106] hover:bg-[#FE0106] hover:text-white sm:px-8 sm:py-4 px-4 py-2 transition"
+                  >
+                    Подробнее
+                    <svg
+                      width="14"
+                      height="11"
+                      viewBox="0 0 14 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 5.5H1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 10L13 5.5L8.5 1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide bg-[url('/img/heroBg.png')]">
+              <div class="container">
+                <div class="slide-content">
+                  <h2
+                    class="lg:text-[60px] sm:text-[40px] text-[25px] leading-none font-[700] mb-4"
+                  >
+                    Инновации и развитие
+                  </h2>
+                  <p
+                    class="lg:text-[22px] sm:text-[18px] text-[16px] mb-[33px] font-[500]"
+                  >
+                    Мы создаём современные решения для бизнеса и технологий
+                    будущего.
+                  </p>
+                  <a
+                    href="#"
+                    class="frame flex items-center gap-2 max-w-[170px] bg-white font-[600] text-[14px] text-[#FE0106] hover:bg-[#FE0106] hover:text-white sm:px-8 sm:py-4 px-4 py-2 transition"
+                  >
+                    Подробнее
+                    <svg
+                      width="14"
+                      height="11"
+                      viewBox="0 0 14 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 5.5H1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 10L13 5.5L8.5 1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide bg-[url('/img/heroBg.png')]">
+              <div class="container">
+                <div class="slide-content">
+                  <h2
+                    class="lg:text-[60px] sm:text-[40px] text-[25px] leading-none font-[700] mb-4"
+                  >
+                    Современные технологии
+                  </h2>
+                  <p
+                    class="lg:text-[22px] sm:text-[18px] text-[16px] mb-[33px] font-[500]"
+                  >
+                    Мы внедряем инновации и стремимся к совершенству в каждой
+                    детали.
+                  </p>
+                  <a
+                    href="#"
+                    class="frame flex items-center gap-2 max-w-[170px] bg-white font-[600] text-[14px] text-[#FE0106] hover:bg-[#FE0106] hover:text-white sm:px-8 sm:py-4 px-4 py-2 transition"
+                  >
+                    Подробнее
+                    <svg
+                      width="14"
+                      height="11"
+                      viewBox="0 0 14 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 5.5H1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.5 10L13 5.5L8.5 1"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✅ Pagination (nuqtalar) -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ✅ Navigation arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+      <!-- {------------   section 2 ---------------} -->
+      <section>
+        <div class="container">
+          <div class="flex flex-col lg:flex-row items-center py-[100px]">
+            <div
+              class="w-[230px] sm:w-[300px] md:w-[400px] xl:w-[500px] 2xl:w-[600px] aspect-square overflow-hidden rounded-full flex-shrink-0"
+            >
+              <img
+                src="/img/aat-round.png"
+                alt="AAT company"
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+
+            <div class="lg:ml-[70px] max-w-[650px] mt-8 lg:mt-0  lg:pl-0 flex flex-col items-center lg:items-start lg:text-start">
+              <h2 class="xl:text-[40px] lg:text-[35px] md:text-[30px] sm:text-[27px] text-[24px] font-[700] text-[#003791]">О компании</h2>
+              <p
+                class="font-[500] sm:text-[18px] text-[14px] text-[#474747] mt-[32px] mb-[41px]"
+              >
+                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos, qui ratione voluptatem sequi
+                nesciunt, neque porro quisquam est, qui dolorem
+                ipsum, quia dolor sit amet consectetur adipisci velit, sed quia
+                non numquam eius modi tempora incidunt, ut labore et dolore
+                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea
+                commodi consequatur? Quis autem vel eum iure
+                reprehenderit, qui in ea voluptate velit esse, quam nihil
+                molestiae consequatur, vel illum, qui dolorem eum fugiat, quo
+                voluptas nulla pariatur.
+              </p>
+              <a
+                href="#"
+                class="frame flex items-center gap-2 max-w-[170px] font-[600] text-[14px] hover:opacity-[0.8] bg-[#FE0106] text-white sm:px-8 sm:py-4 px-4 py-2 transition"
+              >
+                Подробнее
+                <svg
+                  width="14"
+                  height="11"
+                  viewBox="0 0 14 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 5.5H1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.5 10L13 5.5L8.5 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- swiper js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

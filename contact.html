@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>AAT</title>
+</head>
+<body>
+        <!-- {------  header  --------} -->
+    <header>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__inner flex justify-between">
+            <div class="flex items-center">
+              <a
+                href="tel:+998935054505"
+                class="flex items-center mr-[21px] text-[14px]"
+                ><img src="./img/phone.png" class="w-5 h-5 mr-[5px]" alt="" />
+                +99 893 505 45 05</a
+              >
+              <a
+                href="mailto:aat@info.com"
+                class="flex items-center text-[14px]"
+                ><img src="./img/mail.png" class="w-5 h-max mr-[5px]" alt="" />
+                aat@info.com</a
+              >
+            </div>
+            <div class="lang-dropdown">
+              <button class="lang-btn" id="langBtn">
+                <div class="flex items-center text-[14px] lanBtnVal">
+                  <div id="lanBtnVal">RU</div>
+                  <img src="./img/arrowDown.png" class="ml-[6px]" alt="" />
+                </div>
+              </button>
+              <div class="lang-menu" id="langMenu">
+                <a href="#">RU</a>
+                <a href="#">EN</a>
+                <a href="#">UZ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__inner items-center flex py-[14px]">
+            <a href="/"
+              ><img
+                src="./img/logo.svg"
+                style="max-width: none"
+                width="120px"
+                height="87px"
+                alt=""
+            /></a>
+
+            <nav class="ml-auto navbar">
+              <ul class="flex uppercase font-semibold navlist lg:text-[14px]">
+                <li><a href="/about.html">О компании</a></li>
+                <li><a href="/holding.html">основатель холдинга</a></li>
+                <li><a href="/company.html">компании</a></li>
+                <li><a href="/centre.html">R&d центр</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="/partner.html">Партнерство</a></li>
+                <li><a href="/contact.html">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="flex ml-auto til2">
+              <!--    -------Til---------     -->
+              <div class="ml-auto mr-5">
+                <div class="lang-dropdown">
+                  <button class="lang-btn" id="langBtn2">
+                    <div class="flex items-center lanBtnVal2">
+                      <div id="lanBtnVal2">RU</div>
+                      <img src="./img/arrowDown.png" class="ml-[6px]" alt="" />
+                    </div>
+                  </button>
+                  <div class="lang-menu" id="langMenu2">
+                    <a href="#">RU</a>
+                    <a href="#">EN</a>
+                    <a href="#">UZ</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Burger Button -->
+              <button
+                id="burgerBtn"
+                class="burger-btn"
+                aria-label="Открыть меню"
+              >
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div id="menuOverlay" class="menu-overlay"></div>
+
+      <!-- Mobile Menu Panel -->
+      <div id="mobileMenu" class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list uppercase">
+            <li class="mobile-nav-item">
+              <a href="/about.html" class="mobile-nav-link">О компании</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/holding.html" class="mobile-nav-link"
+                >основатель холдинга</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/company.html" class="mobile-nav-link">компании</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/centre.html" class="mobile-nav-link">R&d центр</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/news.html" class="mobile-nav-link">Новости</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/partner.html" class="mobile-nav-link">Партнерство</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/contact.html" class="mobile-nav-link">Контакты</a>
+            </li>
+
+            <li class="mobile-nav-item"><div class="block h-15"></div></li>
+            <li class="mobile-nav-item">
+              <a
+                href="tel:+998935054505"
+                class="flex items-center mr-[21px] mobile-nav-link"
+                ><img src="./img/phone-w.svg" class="w-5 h-5 mr-[5px]" alt="" />
+                +99 893 505 45 05</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                href="mailto:aat@info.com"
+                class="flex items-center mobile-nav-link"
+                ><img src="./img/mail-w.svg" class="w-5 h-max mr-[5px]" alt="" />
+                aat@info.com</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Contact page</h1>
+    <script src="./js/main.js"></script>
+</body>
+</html>
